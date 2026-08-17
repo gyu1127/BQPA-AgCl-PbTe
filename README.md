@@ -1,15 +1,24 @@
-# Data Availability for [Beyond the Quasiparticle Approximation: Lattice Heat Capacity of Strongly Anharmonic Solids]
+# Data Availability: Beyond the Quasiparticle Approximation: Lattice Heat Capacity of Strongly Anharmonic Solids
 
-* `agcl`: contains Jupyter notebook and data files for AgCl analysis
-* `pbte`: contains Jupyter notebook and data files for PbTe analysis
+This repository contains the computational data and analysis scripts for the manuscript **"Beyond the Quasiparticle Approximation: Lattice Heat Capacity of Strongly Anharmonic Solids"**.
 
 ---
 
-## 1. In `agcl' and `pbte`,
+## 📁 Repository Structure
 
-* `heat_capacity.ipynb`: Jupyter notebook for analysis
-* `POSCAR`: crystal structure input
-* `T*`: folder containing input files of corresponding temperature
-* `BTE.omega`: raw data for frequency in ShengBTE format
-* `BTE.sefeng*ph_spectrum`: raw data for phonon self energy
-* `norm_mode_resolved_*`: mode-resolved lattice heat capacity
+The repository is organized by material into two main directories:
+* `agcl/`: Contains data and analysis for Silver Chloride (AgCl).
+* `pbte/`: Contains data and analysis for Lead Telluride (PbTe).
+
+Both directories share the identical internal structure and file formats as described below.
+
+```text
+.
+├── agcl/                          
+└── pbte/                          
+    ├── heat_capacity.ipynb        # Jupyter notebook for heat capacity analysis
+    ├── POSCAR                     # Crystal structure input file
+    ├── BTE.omega                  # Raw frequency data (ShengBTE format)
+    ├── BTE.sefeng*ph_spectrum     # Raw phonon self-energy spectrum data
+    ├── norm_mode_resolved_*/      # Mode-resolved lattice heat capacity folders
+    └── T*/                        # Directory containing temperature-dependent input files
