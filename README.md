@@ -18,7 +18,7 @@ Both directories share the identical internal structure and file formats as desc
 └── pbte/                          
     ├── heat_capacity.ipynb        # Jupyter notebook for heat capacity analysis
     ├── POSCAR                     # Crystal structure input file
-    ├── BTE.omega                  # Raw frequency data (ShengBTE format)
-    ├── BTE.sefeng*ph_spectrum     # Raw phonon self-energy spectrum data
     ├── norm_mode_resolved_*/      # Mode-resolved lattice heat capacity folders
     └── T*/                        # Directory containing temperature-dependent input files
+        ├── BTE.omega                  # Raw frequency data (ShengBTE format)
+    	└── BTE.sefeng*ph_spectrum     # Raw phonon self-energy spectrum data
